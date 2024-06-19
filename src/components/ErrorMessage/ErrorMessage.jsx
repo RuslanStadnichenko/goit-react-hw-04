@@ -1,7 +1,9 @@
-import s from './ErrorMessage.module.css'
+import s from './ErrorMessage.module.css';
 
 export const ErrorMessage = () => {
   return (
-    <div>ErrorMessage</div>
-  )
-}
+    <div className={s.error}>
+      Seems like something went wrong, please try again later!
+    </div>
+  );
+};

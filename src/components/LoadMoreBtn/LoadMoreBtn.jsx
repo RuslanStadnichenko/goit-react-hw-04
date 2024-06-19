@@ -1,7 +1,9 @@
-import s from './LoadMoreBtn.module.css'
+import s from './LoadMoreBtn.module.css';
 
-export const LoadMoreBtn = () => {
+export const LoadMoreBtn = ({ onClick }) => {
   return (
-    <div>LoadMoreBtn</div>
-  )
-}
+    <button type="button" className={s.btn} onClick={onClick}>
+      Load more...
+    </button>
+  );
+};
